@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="title-container">
+      <h1>Personal Library</h1>
+    </div>
+    <div id="main-container" class="main-container">
+      <button id="new-book-btn" class="new-book-btn">New Book</button>
+      <form id="book-form" class="form-flex" action="post">
+        <label for="title">Title:</label>
+        <input
+          type="text"
+          id="title"
+          name="book-title"
+          oninvalid="this.setCustomValidity('Please Enter a Book Title')"
+          oninput="setCustomValidity('')"
+          required
+        />
+        <label for="author">Author:</label>
+        <input
+          type="text"
+          id="author"
+          name="book-author"
+          oninvalid="this.setCustomValidity(`Please Enter Author's Name`)"
+          oninput="setCustomValidity('')"
+          required
+        />
+        <label for="pages">Pages:</label>
+        <input
+          type="number"
+          id="pages"
+          name="book-pages"
+          min="1"
+          max="21500"
+          oninvalid="this.setCustomValidity('Please Enter a Valid Number: 1 - 21,500')"
+          oninput="setCustomValidity('')"
+          required
+        />
+        <label for="read">Read?</label>
+        <input type="checkbox" name="read" class="read" />
+        <input type="submit" id="add-button" value="Add Book" />
+      </form>
+      <section id="book-list" class="book-container"></section>
+    </div>
+    <script src="index.js" defer></script>
+  </body>
+</html>

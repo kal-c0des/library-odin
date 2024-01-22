@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./image/library-annie-spratt.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #edf2f4;
+  font-family: "DM Serif Display", serif;
+}
+
+form {
+  display: none;
+  font-size: 22px;
+  gap: 12px;
+}
+
+.form-flex {
+  display: flex;
+  align-content: center;
+  background-color: #457b9d;
+  height: 48px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  background-color: #023047;
+  padding: 16px 0px;
+}
+
+.main-container {
+  display: grid;
+  justify-items: center;
+  row-gap: 24px;
+}
+
+.new-book-btn {
+  font-family: "DM Serif Display", serif;
+  font-size: 18px;
+  background-color: #edf2f4;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin-top: 28px;
+}
+
+.new-book-btn:hover {
+  background-color: #99d98c;
+  cursor: pointer;
+}
+
+label {
+  color: #ffb703;
+}
+
+input {
+  height: 26px;
+  text-indent: 6px;
+  vertical-align: center;
+}
+
+input#add-button {
+  font-family: "DM Serif Display", serif;
+  height: 28px;
+  width: 72px;
+  border: none;
+  border-radius: 6px;
+  padding-right: 8px;
+}
+
+input#add-button:hover {
+  background-color: #e9edc9;
+  cursor: pointer;
+}
+
+.read {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffb703;
+  color: #edf2f4;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px 8px;
+  max-width: 250px;
+  min-height: 200px;
+}
+
+.btn-read,
+.btn-not-read,
+.remove-btn {
+  font-family: "DM Serif Display", serif;
+  border: none;
+  border-radius: 6px;
+  height: 32px;
+  width: 120px;
+  margin: 4px;
+}
+
+.btn-read {
+  background-color: #588157;
+  margin-top: 8px;
+}
+
+.btn-read:hover {
+  background-color: #58815799;
+}
+
+.btn-not-read {
+  background-color: #e63946;
+  margin-top: 8px;
+}
+
+.btn-not-read:hover {
+  background-color: #e6394699;
+}
+
+.remove-btn {
+  background-color: #edf2f4;
+}
+
+.remove-btn:hover {
+  background-color: #adb5bd;
+}
